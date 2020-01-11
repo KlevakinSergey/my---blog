@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
     <div class="container post">
             <h1 class="titles text-center" ><a style="color:#5bbc2e;" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-			<p class="titles-text">{{ post.text|linebreaksbr }}</p>
+            <p class="titles-text">{{ post.text|linebreaksbr }}</p>
+            <img src="{% static 'images/slider-pic.jpg' %}" alt="" class="d-block w-100">
         {% if post.published_date %}
             <div class="date">
                 {{ post.published_date }}
