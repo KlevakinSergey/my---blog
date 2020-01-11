@@ -1,0 +1,165 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+header{
+	background-color: #5bbc2e;
+}
+.header .navbar-expand-lg .navbar-collapse  {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+}
+.btn-sign{
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: rgba(0,0,0,0.2);
+	border: transparent;
+	border-radius: 5%;
+	padding: 10px 40px
+}
+.titel-carousel{
+	font-size: 3.5vw ;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #5bbc2e;
+	padding: 105px;
+}
+.titel-carousel span{
+	color:  #000;
+
+}
+.carousel-indicators li {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid #5bbc2e;
+	opacity: 1;
+	margin-bottom: 30px;
+}
+.carousel-indicators .active{
+	width: 12px;
+	height: 12px;
+	background-color: #5bbc2e;
+	margin-top: 1px;
+}
+.titles{
+	font-size: 30px;
+	color: #8d8d8d ;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-top: 80px;
+
+}
+.titles span{
+	color: #5bbc2e;
+}
+.titles-text{
+	font-size: 15px;
+	font-weight: 400;
+	color: #767575;
+}
+.background-block{
+	background-color: #f5f5f5;
+}
+
+.works-list{
+	list-style-image: url(../images/arrow.png);
+	margin-bottom: 70px;
+}
+.bg-img-1{
+	background-image: url(../images/pic-big-1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 315px;
+}
+.bg-img-2{
+	background-image: url(../images/pic-big-2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	min-height: 247px;
+	margin-bottom: 10px;
+}
+.card{
+	border-radius: 0;
+}
+.title-card{
+	font-size: 12px;
+	color: #4b4b4b;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 30px
+}
+.btn-card{
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: green;
+
+}
+.card-body{
+	text-align: center;
+	padding: 10px;
+}
+.btn{
+	border-radius: 0;
+	padding: 5px 25px;
+}
+.btn-bg-1{
+	background-color: rgb(83,166,219);
+}
+.btn-bg-2{
+	background-color: rgb(116,185,71);
+}
+.btn-bg-3{
+	background-color: rgb(180,65,185);
+}
+.btn-bg-4{
+	background-color: rgb(214,193,66);
+}
+footer{
+	background-color: #141414;
+	margin-top: 100px;
+	padding: 20px;
+	
+}
+footer p{
+	font-size: 12px;
+	font-weight: 600;
+	color: #e0e0e0;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+.modal-header{
+	background-color: #5bbc2e;
+}
+.modal-title{
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+.info-user{
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase; 
+}
+.btn-enter{
+	background-color: #5bbc2e;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+
+}
+.modal-content{
+	text-align: center;
+}
