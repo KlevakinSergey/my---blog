@@ -56,7 +56,7 @@
 		</div>
 		{% for post in posts %}
 		<div class="container">		
-			<h1 class="titles text-center" style="color:  #5bbc2e;">{{ post.title }}</h1>
+			<h1 class="titles text-center" ><a style="color:#5bbc2e;" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 			<p class="titles-text">{{ post.text|linebreaksbr }}</p>
 			<p class= titles-text>published: {{ post.published_date }}</p>
 		</div>			
