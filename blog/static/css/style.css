@@ -9,6 +9,7 @@ header{
 	font-size: 13px;
 	font-weight: 600;
 }
+
 .btn-sign{
 	font-size: 14px;
 	font-weight: 700;
@@ -47,14 +48,14 @@ header{
 }
 .titles{
 	font-size: 30px;
-	color: #8d8d8d ;
+	color :#5bbc2e;
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-top: 80px;
 
 }
 .titles span{
-	color: #5bbc2e;
+	color: #767575;
 }
 .titles-text{
 	font-size: 15px;
@@ -123,6 +124,9 @@ header{
 .btn-bg-4{
 	background-color: rgb(214,193,66);
 }
+
+
+
 footer{
 	background-color: #141414;
 	margin-top: 100px;
@@ -135,6 +139,7 @@ footer p{
 	color: #e0e0e0;
 	text-transform: uppercase;
 	padding-top: 10px;
+	
 }
 .modal-header{
 	background-color: #5bbc2e;

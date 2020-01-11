@@ -67,6 +67,17 @@
 		</div>
 	</div>
 	<div class="container">
+		
+		{% for post in posts %}
+			
+				<h1 class="titles text-center" style="color:  #5bbc2e;">{{ post.title }}</h1>
+				<p class="titles-text">{{ post.text|linebreaksbr }}</p>
+				<p class= titles-text>published: {{ post.published_date }}</p>
+			
+		{% endfor %}	
+	
+	</div>
+	<div class="container">
 		<div class="row mb-5">
 			<div class="col-12 col-md-5 mt-5 bg-img-1"></div>
 			<div class="col-12 col-md-7  py-3 px-5">
@@ -169,20 +180,11 @@
 		</div>
 	</div>
 </div>
-<div>
-
-	{% for post in posts %}
-    <div>
-        <h1><a href="">{{ post.title }}</a></h1>
-		<p>{{ post.text|linebreaksbr }}</p>
-		<p>published: {{ post.published_date }}</p>
-    </div>
-{% endfor %}	
-
-</div>
+	
+	
 <footer>
 	<div class="container">
-		<p>© 2015 job board landing page by mike taylor</p>
+		<p>© 2020 job board landing page by sergey klevakin</p>
 	</div>
 </footer>
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
