@@ -23,6 +23,10 @@
 							<li class="nav-item pr-4">
 								<a class="nav-link" href="#">Team</a>
 							</li>
+							<li class="nav-item pr-4">
+								<a class="nav-link" href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span>new post</a>
+							</li>
+							
 						</ul>
 					</div>
 				</nav>
@@ -55,6 +59,7 @@
 			</div>
 		</div>
 		{% for post in posts %}
+		
 		<div class="container">		
 			<h1 class="titles text-center" ><a style="color:#5bbc2e;" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 			<p class="titles-text">{{ post.text|linebreaksbr }}</p>
@@ -171,7 +176,11 @@
 	<div class="container">
 		<p>© 2020 landing page by sergey klevakin</p>
 	</div>
+	
+	
+
 	</footer>
+	
 	
 	<script src="{% static 'js/jquery-3.4.0.slim.min.js' %}"></script>
 	<script src="{% static 'js/popper.min.js' %}"></script>

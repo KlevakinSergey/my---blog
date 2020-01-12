@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load  static %}
+<header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}"  alt="joby"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </div>          
+</header>            
+<div class="container">
+    <h1 class="titles" style="color: #5bbc2e;" >New post</h1>
+    <form  enctype="multipart/form-data" method="POST" class="form mt-3 info-user ">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn-enter btn-lg pl-3">save</button>
+    </form>
+</div>   
+{% endblock %}
