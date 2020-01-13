@@ -3,6 +3,9 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from .forms import PostForm
 from .models import Post
+from .models import SimpleAddPhoto
+from .forms import SimpleAddPhotoForm
+from django.http import HttpResponse
 
 
 
@@ -48,3 +51,16 @@ def post_edit(request, pk):
 
 
        
+
+def add_simple_photo(request):
+    form = SimpleAddPhotoForm()
+    if request.method == 'POST':
+        form =SimpleAddPhotoForm(request.POST, request.FILES)
+        if form.is_valid():
+            if 'photo' in request.FILES:
+                form.photo = request.FILES['photo']
+            form.save(commit=True)
+            return HttpResponse('image upload success')
+        else:
+            print(form.errors)
+        return render(request, 'post_edit.html', {'form': form})       

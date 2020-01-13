@@ -19,4 +19,11 @@ class Post(models.Model):
         return self.title
 
 
+class SimpleAddPhoto(models.Model):
+    title = models.CharField(max_length=128)
+    description = models.TextField()
+    care = models.TextField()
+    photo = models.ImageField(upload_to='post_photo')        
+
+
 

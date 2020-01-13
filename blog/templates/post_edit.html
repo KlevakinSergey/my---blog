@@ -13,6 +13,7 @@
 <div class="container">
     <h1 class="titles" style="color: #5bbc2e;" >New post</h1>
     <form  enctype="multipart/form-data" method="POST" class="form mt-3 info-user ">{% csrf_token %}
+        <p><input type="file" name="photo" multiple accept="image/*,image/jpeg/jpg">
         {{ form.as_p }}
         <button type="submit" class="btn-enter btn-lg pl-3">save</button>
     </form>
